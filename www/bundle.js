@@ -60415,7 +60415,7 @@
 	  return _react2.default.createElement(
 	    _reactOnsenui.Page,
 	    { renderToolbar: function renderToolbar() {
-	        return _react2.default.createElement(_NavBar2.default, { title: 'Onsen Weather', navigator: navigator });
+	        return _react2.default.createElement(_NavBar2.default, { title: '오늘의 날씨', navigator: navigator });
 	      } },
 	    _react2.default.createElement(_LocationList2.default, { navigator: navigator }),
 	    _react2.default.createElement(_AddLocation2.default, null)

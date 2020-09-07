@@ -28,13 +28,12 @@ const store = createStore(weatherApp,
 import {addLocationAndFetchWeather} from './actions';
 
 [
+  'Seoul',
+  'Pohang',
   'Tokyo',
   'New York',
   'London',
-  'Beijing',
-  'Sydney',
-  'Rio de Janeiro',
-  'Istanbul'
+  'Beijing'
 ].forEach((city) => store.dispatch(addLocationAndFetchWeather(city)));
 
 const rootElement = document.getElementById('root');
