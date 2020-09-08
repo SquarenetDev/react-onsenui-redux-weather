@@ -78,7 +78,8 @@ const Location = ({
       navigator.pushPage({component: WeatherPage}).then(function() {
         //alert('Page pushed!');
         //location.href = location.href + "?id=" + id
-        history.pushState({ data: 'pushpush' }, 'title을 pushState로', '/#')
+        history.pushState({ data: 'pushpush' }, null, '/#')
+        backButtonForAjax();
       });
     }} tappable>
       <div className='left'>
@@ -111,6 +112,13 @@ const Location = ({
     </ListItem>
   );
 };
+
+
+function backButtonForAjax() {
+  //alert("back")
+  document.querySelector('.back-button').click();
+}
+
 
 const mapDispatchToProps = (dispatch) => {
   return {
