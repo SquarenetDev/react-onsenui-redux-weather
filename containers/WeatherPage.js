@@ -81,7 +81,7 @@ const WeatherPage = ({
   const weatherColor = weatherCodeToColor(icon);
 
   if (isInvalid) {
-    content = <div style={styles.invalid}>Unable to fetch data!</div>;
+    content = <div style={styles.invalid}>자료 읽기 실패!</div>;
   } else if (isFetching) {
     content = <ProgressCircular style={styles.progress} indeterminate />;
   } else {
@@ -105,7 +105,7 @@ const WeatherPage = ({
               {temperature}&deg;
             </div>
             <div style={styles.dataCaption}>
-              TEMPERATURE
+              온도
             </div>
           </div>
           <div style={styles.dataColumn}>
@@ -113,7 +113,7 @@ const WeatherPage = ({
               {humidity}%
             </div>
             <div style={styles.dataCaption}>
-              HUMIDITY
+              습도
             </div>
           </div>
         </div>

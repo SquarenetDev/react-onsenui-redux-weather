@@ -35,7 +35,30 @@ export const queryWeather = (city) => {
   let data;
 
   return apiCall(`${API_URL}/weather?q=${city.trim()}&appid=${API_KEY}`)
-    .then(json => {
+    .then(
+      json => {
+
+
+      if(json.name == "Seoul"){
+        json.name = "서울"
+      }
+      if(json.name == "Pohang"){
+        json.name = "포항"
+      }
+      if(json.name == "Tokyo"){
+        json.name = "도쿄"
+      }
+      if(json.name == "New York"){
+        json.name = "뉴욕"
+      }
+      if(json.name == "London"){
+        json.name = "런던"
+      }
+      if(json.name == "Beijing"){
+        json.name = "베이징"
+      }
+
+
       data = {
         temperature: round(kelvinToCelsius(json.main.temp), 0),
         humidity: json.main.humidity,

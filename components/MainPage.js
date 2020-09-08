@@ -11,7 +11,7 @@ import AddLocation from '../containers/AddLocation';
 const MainPage = ({navigator}) => (
   <Page renderToolbar={() => <NavBar title='오늘날씨' navigator={navigator} />}>
     <LocationList navigator={navigator} />
-    <AddLocation />
+    
   </Page>
 );
 

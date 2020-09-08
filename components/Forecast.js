@@ -4,13 +4,13 @@ import WeatherIcon from '../components/WeatherIcon';
 import {weatherCodeToColor} from '../util';
 
 const WEEKDAYS = {
-  0: 'SUN',
-  1: 'MON',
-  2: 'TUE',
-  3: 'WED',
-  4: 'THU',
-  5: 'FRI',
-  6: 'SAT'
+  0: '월',
+  1: '화',
+  2: '수',
+  3: '목',
+  4: '금',
+  5: '토',
+  6: '일'
 };
 
 const styles = {
