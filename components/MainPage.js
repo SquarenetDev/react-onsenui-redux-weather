@@ -9,7 +9,7 @@ import LocationList from '../containers/LocationList';
 import AddLocation from '../containers/AddLocation';
 
 const MainPage = ({navigator}) => (
-  <Page renderToolbar={() => <NavBar title='오늘의 날씨' navigator={navigator} />}>
+  <Page renderToolbar={() => <NavBar title='오늘날씨' navigator={navigator} />}>
     <LocationList navigator={navigator} />
     <AddLocation />
   </Page>

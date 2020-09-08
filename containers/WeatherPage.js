@@ -123,7 +123,7 @@ const WeatherPage = ({
     );
   }
   return (
-    <Page renderToolbar={() => <NavBar backButton={true} title={`Weather in ${name}`} navigator={navigator} />}>
+    <Page renderToolbar={() => <NavBar backButton={true} title={`오늘날씨 - ${name}`} navigator={navigator} />}>
       <div style={styles.main}>
         {content}
       </div>
