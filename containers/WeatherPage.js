@@ -122,7 +122,6 @@ const WeatherPage = ({
       </div>
     );
   }
-
   return (
     <Page renderToolbar={() => <NavBar backButton={true} title={`Weather in ${name}`} navigator={navigator} />}>
       <div style={styles.main}>

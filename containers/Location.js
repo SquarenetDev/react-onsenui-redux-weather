@@ -70,8 +70,16 @@ const Location = ({
 
   return (
     <ListItem onClick={() => {
+      //alert("test")
+      //location.href = location.href + "?id=" + id
+      
       actions.selectLocation(id);
-      navigator.pushPage({component: WeatherPage});
+      //navigator.pushPage({component: WeatherPage});
+      navigator.pushPage({component: WeatherPage}).then(function() {
+        //alert('Page pushed!');
+        //location.href = location.href + "?id=" + id
+        history.pushState({ data: 'pushpush' }, 'title을 pushState로', '/#')
+      });
     }} tappable>
       <div className='left'>
         <div style={{...styles.weatherIcon, backgroundColor: weatherColor}}>
