@@ -77,9 +77,7 @@ const Location = ({
       //navigator.pushPage({component: WeatherPage});
       navigator.pushPage({component: WeatherPage}).then(function() {
         //alert('Page pushed!');
-        //location.href = location.href + "?id=" + id
-        history.pushState({ data: 'pushpush' }, null, '/#')
-        //backButtonForAjax();
+        //history.pushState({ data: 'pushpush' }, null, '/#')
       });
     }} tappable>
       <div className='left'>
